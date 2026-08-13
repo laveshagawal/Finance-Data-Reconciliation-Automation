@@ -1,0 +1,26 @@
+transaction_id,date,amount,description,category,account,reference,status
+TXN001,2024-01-15,1250.00,Office Rent Payment,Rent,Checking Account,REF001,cleared
+TXN002,2024-01-16,89.99,Software Subscription,Software,Credit Card,REF002,cleared
+TXN003,2024-01-17,3200.50,Client Project Payment,Revenue,Checking Account,REF003,cleared
+TXN004,2024-01-18,150.00,Internet Bill,Utilities,Checking Account,REF004,cleared
+TXN005,2024-01-19,45.67,Office Supplies,Supplies,Credit Card,REF005,cleared
+TXN006,2024-01-20,2500.00,Freelance Income,Revenue,Checking Account,REF006,cleared
+TXN007,2024-01-21,75.00,Phone Bill,Utilities,Checking Account,REF007,cleared
+TXN008,2024-01-22,1200.00,Marketing Campaign,Marketing,Credit Card,REF008,cleared
+TXN009,2024-01-23,35.25,Coffee Meeting,Meals,Credit Card,REF009,cleared
+TXN010,2024-01-24,1800.00,Consulting Fee,Revenue,Checking Account,REF010,cleared
+TXN011,2024-01-25,299.00,Annual Subscription,Software,Credit Card,REF011,cleared
+TXN012,2024-01-26,500.00,Equipment Purchase,Equipment,Checking Account,REF012,cleared
+TXN013,2024-01-27,85.50,Gas Expense,Travel,Credit Card,REF013,cleared
+TXN014,2024-01-28,2200.00,Project Milestone,Revenue,Checking Account,REF014,cleared
+TXN015,2024-01-29,120.00,Insurance Premium,Insurance,Checking Account,REF015,cleared
+TXN016,2024-01-30,65.00,Parking Fee,Travel,Credit Card,REF016,cleared
+TXN017,2024-01-31,450.00,Design Services,Revenue,Checking Account,REF017,cleared
+TXN018,2024-02-01,199.99,Cloud Hosting,Software,Credit Card,REF018,cleared
+TXN019,2024-02-02,300.00,Legal Consultation,Legal,Checking Account,REF019,cleared
+TXN020,2024-02-03,55.75,Team Lunch,Meals,Credit Card,REF020,cleared
+TXN021,2024-02-04,1250.00,Office Rent Payment,Rent,Checking Account,REF021,cleared
+TXN022,2024-02-05,500.00,Extra Income,Revenue,Checking Account,REF022,cleared
+TXN003,2024-01-17,3200.50,Client Project Payment Duplicate,Revenue,Checking Account,REF003-DUP,cleared
+TXN010,2024-01-24,1850.00,Consulting Fee Amount Mismatch,Revenue,Checking Account,REF010,cleared
+TXN015,2024-01-30,120.00,Insurance Premium Date Mismatch,Insurance,Checking Account,REF015,cleared

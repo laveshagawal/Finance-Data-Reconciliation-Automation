@@ -1,0 +1,255 @@
+{
+  "name": "Finance Reconciliation Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "cronExpression": "0 2 * * *",
+        "timezone": "America/New_York"
+      },
+      "id": "schedule-trigger",
+      "name": "Daily Schedule",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "const fs = require('fs');\nconst path = require('path');\n\n// Check for new files in data directory\nconst dataDir = '/path/to/finance-reconciliation/data';\nconst files = fs.readdirSync(dataDir);\n\nconst csvFiles = files.filter(f => f.endsWith('.csv') || f.endsWith('.xlsx'));\n\nif (csvFiles.length < 2) {\n  return [{ json: { error: 'Insufficient files for reconciliation', files: csvFiles } }];\n}\n\n// Sort by modification time, newest first\ncsvFiles.sort((a, b) => {\n  const statA = fs.statSync(path.join(dataDir, a));\n  const statB = fs.statSync(path.join(dataDir, b));\n  return statB.mtime - statA.mtime;\n});\n\nreturn [{\n  json: {\n    source_file: path.join(dataDir, csvFiles[0]),\n    target_file: path.join(dataDir, csvFiles[1]),\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "check-files",
+      "name": "Check for New Files",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.error}}",
+              "operation": "isEmpty"
+            }
+          ]
+        }
+      },
+      "id": "if-files-exist",
+      "name": "Files Exist?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [750, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "return [{ json: { error: 'Not enough CSV/Excel files found in data directory', timestamp: new Date().toISOString() } }];"
+      },
+      "id": "error-insufficient-files",
+      "name": "Error: Insufficient Files",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [750, 150]
+    },
+    {
+      "parameters": {
+        "command": "cd /path/to/finance-reconciliation && python scripts/reconcile.py --source {{$json.source_file}} --target {{$json.target_file}} --output reports/reconciliation_{{$now.format('YYYYMMDD_HHmmss')}}.txt",
+        "options": {}
+      },
+      "id": "run-reconciliation",
+      "name": "Run Reconciliation",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1000, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "const result = $json;\n\nif (result.stderr && result.stderr.trim()) {\n  return [{ json: { success: false, error: result.stderr, stdout: result.stdout, timestamp: new Date().toISOString() } }];\n}\n\nreturn [{ json: { success: true, stdout: result.stdout, timestamp: new Date().toISOString() } }];"
+      },
+      "id": "check-result",
+      "name": "Check Result",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{$json.success}}",
+              "operation": "true"
+            }
+          ]
+        }
+      },
+      "id": "if-success",
+      "name": "Success?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1500, 300]
+    },
+    {
+      "parameters": {
+        "fromEmail": "n8n@finance-reconciliation.local",
+        "toEmail": "finance-team@company.com",
+        "subject": "✅ Finance Reconciliation Completed - {{ $now.format('YYYY-MM-DD') }}",
+        "text": "Finance reconciliation completed successfully.\n\nRun Details:\n- Source: {{$json.source_file}}\n- Target: {{$json.target_file}}\n- Time: {{$now.format('YYYY-MM-DD HH:mm:ss')}}\n\nPlease check the reports directory for detailed results.",
+        "options": {}
+      },
+      "id": "email-success",
+      "name": "Email Success",
+      "type": "n8n-nodes-base.sendEmail",
+      "typeVersion": 1,
+      "position": [1750, 200],
+      "credentials": {
+        "smtp": "smtp-credentials"
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "n8n@finance-reconciliation.local",
+        "toEmail": "finance-team@company.com",
+        "subject": "❌ Finance Reconciliation FAILED - {{ $now.format('YYYY-MM-DD') }}",
+        "text": "Finance reconciliation failed!\n\nError Details:\n{{$json.error || $json.stdout}}\n\nTime: {{$now.format('YYYY-MM-DD HH:mm:ss')}}\n\nPlease check the logs and investigate.",
+        "options": {}
+      },
+      "id": "email-failure",
+      "name": "Email Failure",
+      "type": "n8n-nodes-base.sendEmail",
+      "typeVersion": 1,
+      "position": [1750, 400],
+      "credentials": {
+        "smtp": "smtp-credentials"
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "// Archive processed files\nconst fs = require('fs');\nconst path = require('path');\n\nconst sourceFile = $json.source_file;\nconst targetFile = $json.target_file;\nconst archiveDir = '/path/to/finance-reconciliation/data/archive';\n\nif (!fs.existsSync(archiveDir)) {\n  fs.mkdirSync(archiveDir, { recursive: true });\n}\n\nconst timestamp = new Date().toISOString().replace(/[:.]/g, '-');\n\nif (fs.existsSync(sourceFile)) {\n  const sourceName = path.basename(sourceFile);\n  fs.renameSync(sourceFile, path.join(archiveDir, `${sourceName}.${timestamp}`));\n}\n\nif (fs.existsSync(targetFile)) {\n  const targetName = path.basename(targetFile);\n  fs.renameSync(targetFile, path.join(archiveDir, `${targetName}.${timestamp}`));\n}\n\nreturn [{ json: { archived: true, timestamp: new Date().toISOString() } }];"
+      },
+      "id": "archive-files",
+      "name": "Archive Processed Files",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [2000, 300]
+    }
+  ],
+  "connections": {
+    "Daily Schedule": {
+      "main": [
+        [
+          {
+            "node": "Check for New Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for New Files": {
+      "main": [
+        [
+          {
+            "node": "Files Exist?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Files Exist?": {
+      "main": [
+        [
+          {
+            "node": "Run Reconciliation",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error: Insufficient Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error: Insufficient Files": {
+      "main": [
+        [
+          {
+            "node": "Email Failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Reconciliation": {
+      "main": [
+        [
+          {
+            "node": "Check Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Result": {
+      "main": [
+        [
+          {
+            "node": "Success?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Success?": {
+      "main": [
+        [
+          {
+            "node": "Email Success",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Email Failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email Success": {
+      "main": [
+        [
+          {
+            "node": "Archive Processed Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email Failure": {
+      "main": [
+        [
+          {
+            "node": "Archive Processed Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "id": "finance-reconciliation-workflow"
+}

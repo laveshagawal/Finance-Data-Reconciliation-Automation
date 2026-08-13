@@ -1,0 +1,592 @@
+2026-08-08 22:40:03,585 - __main__ - INFO - Starting reconciliation run
+2026-08-08 22:40:03,586 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-08 22:40:03,586 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-08 22:40:03,693 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-08 22:40:03,694 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-08 22:40:03,694 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-08 22:40:03,707 - __main__ - ERROR - Database connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2026-08-08 22:40:03,709 - __main__ - ERROR - Failed to connect to database. Exiting.
+2026-08-08 22:55:49,118 - __main__ - INFO - Starting reconciliation run
+2026-08-08 22:55:49,118 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-08 22:55:49,119 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-08 22:55:49,214 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-08 22:55:49,215 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-08 22:55:49,215 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-08 22:55:49,252 - __main__ - INFO - Database connection established
+2026-08-08 22:55:49,252 - __main__ - INFO - Loading source data...
+2026-08-08 22:55:49,299 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-08 22:55:49,299 - __main__ - INFO - Loading target data...
+2026-08-08 22:55:49,322 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-08 22:55:49,323 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-08 22:55:49,324 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-08 22:55:49,324 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-08 22:55:49,324 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-08 22:55:49,325 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-08 22:55:49,332 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-08 22:55:49,333 - __main__ - INFO - Saving to database...
+2026-08-08 22:55:49,421 - __main__ - INFO - Performing reconciliation...
+2026-08-08 22:55:49,433 - __main__ - INFO - Saving reconciliation results...
+2026-08-08 22:55:49,503 - __main__ - INFO - JSON report saved to reports/reconciliation_d214dc08.json
+2026-08-08 22:55:49,503 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-08 22:55:49,505 - __main__ - INFO - Database connection closed
+2026-08-09 16:50:50,781 - __main__ - INFO - Starting reconciliation run
+2026-08-09 16:50:50,783 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 16:50:50,783 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 16:50:51,088 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 16:50:51,089 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 16:50:51,090 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 16:50:51,101 - __main__ - INFO - Database connection established
+2026-08-09 16:50:51,102 - __main__ - INFO - Loading source data...
+2026-08-09 16:50:51,249 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 16:50:51,250 - __main__ - INFO - Loading target data...
+2026-08-09 16:50:51,316 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 16:50:51,317 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 16:50:51,318 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 16:50:51,319 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 16:50:51,320 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 16:50:51,322 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 16:50:51,337 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 16:50:51,339 - __main__ - INFO - Saving to database...
+2026-08-09 16:50:51,472 - __main__ - INFO - Performing reconciliation...
+2026-08-09 16:50:51,561 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 16:50:51,636 - __main__ - INFO - JSON report saved to reports/reconciliation_6e188ef7.json
+2026-08-09 16:50:51,639 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 16:50:51,645 - __main__ - INFO - Database connection closed
+2026-08-09 16:55:09,275 - __main__ - INFO - Starting reconciliation run
+2026-08-09 16:55:09,276 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 16:55:09,277 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 16:55:09,461 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 16:55:09,462 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 16:55:09,462 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 16:55:09,465 - __main__ - INFO - Database connection established
+2026-08-09 16:55:09,466 - __main__ - INFO - Loading source data...
+2026-08-09 16:55:09,512 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 16:55:09,512 - __main__ - INFO - Loading target data...
+2026-08-09 16:55:09,544 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 16:55:09,544 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 16:55:09,545 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 16:55:09,545 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 16:55:09,545 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 16:55:09,546 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 16:55:09,559 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 16:55:09,560 - __main__ - INFO - Saving to database...
+2026-08-09 16:55:09,699 - __main__ - INFO - Performing reconciliation...
+2026-08-09 16:55:09,710 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 16:55:09,761 - __main__ - INFO - JSON report saved to reports/reconciliation_7ea33e52.json
+2026-08-09 16:55:09,761 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 16:55:09,763 - __main__ - INFO - Database connection closed
+2026-08-09 16:59:06,869 - __main__ - INFO - Starting reconciliation run
+2026-08-09 16:59:06,869 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 16:59:06,870 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 16:59:07,035 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 16:59:07,036 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 16:59:07,037 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 16:59:07,042 - __main__ - INFO - Database connection established
+2026-08-09 16:59:07,044 - __main__ - INFO - Loading source data...
+2026-08-09 16:59:07,087 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 16:59:07,088 - __main__ - INFO - Loading target data...
+2026-08-09 16:59:07,119 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 16:59:07,119 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 16:59:07,120 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 16:59:07,120 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 16:59:07,121 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 16:59:07,121 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 16:59:07,136 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 16:59:07,136 - __main__ - INFO - Saving to database...
+2026-08-09 16:59:07,249 - __main__ - INFO - Performing reconciliation...
+2026-08-09 16:59:07,262 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 16:59:07,298 - __main__ - INFO - JSON report saved to reports/reconciliation_e9362cbd.json
+2026-08-09 16:59:07,299 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 16:59:07,301 - __main__ - INFO - Database connection closed
+2026-08-09 17:00:56,949 - __main__ - INFO - Starting reconciliation run
+2026-08-09 17:00:56,949 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 17:00:56,949 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 17:00:57,082 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 17:00:57,083 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 17:00:57,083 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 17:00:57,086 - __main__ - INFO - Database connection established
+2026-08-09 17:00:57,087 - __main__ - INFO - Loading source data...
+2026-08-09 17:00:57,131 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 17:00:57,132 - __main__ - INFO - Loading target data...
+2026-08-09 17:00:57,160 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 17:00:57,161 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 17:00:57,162 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 17:00:57,162 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 17:00:57,162 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 17:00:57,163 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 17:00:57,170 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 17:00:57,170 - __main__ - INFO - Saving to database...
+2026-08-09 17:00:57,268 - __main__ - INFO - Performing reconciliation...
+2026-08-09 17:00:57,286 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 17:00:57,336 - __main__ - INFO - JSON report saved to reports/reconciliation_c3404d8b.json
+2026-08-09 17:00:57,337 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 17:00:57,338 - __main__ - INFO - Database connection closed
+2026-08-09 17:15:57,946 - __main__ - INFO - Starting reconciliation run
+2026-08-09 17:15:57,947 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 17:15:57,947 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 17:15:58,115 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 17:15:58,116 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 17:15:58,116 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 17:15:58,120 - __main__ - INFO - Database connection established
+2026-08-09 17:15:58,120 - __main__ - INFO - Loading source data...
+2026-08-09 17:15:58,194 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 17:15:58,194 - __main__ - INFO - Loading target data...
+2026-08-09 17:15:58,219 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 17:15:58,219 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 17:15:58,220 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 17:15:58,220 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 17:15:58,221 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 17:15:58,221 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 17:15:58,227 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 17:15:58,227 - __main__ - INFO - Saving to database...
+2026-08-09 17:15:58,285 - __main__ - INFO - Performing reconciliation...
+2026-08-09 17:15:58,298 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 17:15:58,345 - __main__ - INFO - JSON report saved to reports/reconciliation_e4445c70.json
+2026-08-09 17:15:58,345 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 17:15:58,347 - __main__ - INFO - Database connection closed
+2026-08-09 18:23:17,318 - __main__ - INFO - Starting reconciliation run
+2026-08-09 18:23:17,319 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 18:23:17,319 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 18:23:17,425 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 18:23:17,426 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 18:23:17,426 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 18:23:17,429 - __main__ - INFO - Database connection established
+2026-08-09 18:23:17,429 - __main__ - INFO - Loading source data...
+2026-08-09 18:23:17,463 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 18:23:17,464 - __main__ - INFO - Loading target data...
+2026-08-09 18:23:17,486 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 18:23:17,487 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 18:23:17,487 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 18:23:17,487 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 18:23:17,488 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 18:23:17,488 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 18:23:17,495 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 18:23:17,495 - __main__ - INFO - Saving to database...
+2026-08-09 18:23:17,610 - __main__ - INFO - Performing reconciliation...
+2026-08-09 18:23:17,626 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 18:23:17,680 - __main__ - INFO - JSON report saved to reports/reconciliation_39c39ab5.json
+2026-08-09 18:23:17,681 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 18:23:17,683 - __main__ - INFO - Database connection closed
+2026-08-09 18:27:30,493 - __main__ - INFO - Starting reconciliation run
+2026-08-09 18:27:30,494 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 18:27:30,494 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 18:27:30,599 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 18:27:30,600 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 18:27:30,600 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 18:27:30,603 - __main__ - INFO - Database connection established
+2026-08-09 18:27:30,603 - __main__ - INFO - Loading source data...
+2026-08-09 18:27:30,633 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 18:27:30,633 - __main__ - INFO - Loading target data...
+2026-08-09 18:27:30,662 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 18:27:30,662 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 18:27:30,662 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 18:27:30,664 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 18:27:30,664 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 18:27:30,664 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 18:27:30,673 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 18:27:30,673 - __main__ - INFO - Saving to database...
+2026-08-09 18:27:30,784 - __main__ - INFO - Performing reconciliation...
+2026-08-09 18:27:30,801 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 18:27:30,855 - __main__ - INFO - JSON report saved to reports/reconciliation_6faf8373.json
+2026-08-09 18:27:30,855 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 18:27:30,857 - __main__ - INFO - Database connection closed
+2026-08-09 18:32:52,800 - __main__ - INFO - Starting reconciliation run
+2026-08-09 18:32:52,800 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 18:32:52,800 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 18:32:52,930 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 18:32:52,930 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 18:32:52,931 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 18:32:52,934 - __main__ - INFO - Database connection established
+2026-08-09 18:32:52,935 - __main__ - INFO - Loading source data...
+2026-08-09 18:32:52,968 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 18:32:52,968 - __main__ - INFO - Loading target data...
+2026-08-09 18:32:52,993 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 18:32:52,993 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 18:32:52,994 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 18:32:52,994 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 18:32:52,994 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 18:32:52,995 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 18:32:53,002 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 18:32:53,002 - __main__ - INFO - Saving to database...
+2026-08-09 18:32:53,113 - __main__ - INFO - Performing reconciliation...
+2026-08-09 18:32:53,131 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 18:32:53,184 - __main__ - INFO - JSON report saved to reports/reconciliation_2d7bf819.json
+2026-08-09 18:32:53,184 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 18:32:53,185 - __main__ - INFO - Database connection closed
+2026-08-09 18:33:23,264 - __main__ - INFO - Starting reconciliation run
+2026-08-09 18:33:23,265 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-09 18:33:23,265 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-09 18:33:23,425 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-09 18:33:23,425 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-09 18:33:23,426 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-09 18:33:23,429 - __main__ - INFO - Database connection established
+2026-08-09 18:33:23,430 - __main__ - INFO - Loading source data...
+2026-08-09 18:33:23,473 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-09 18:33:23,474 - __main__ - INFO - Loading target data...
+2026-08-09 18:33:23,504 - __main__ - WARNING - Target validation warning: Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-09 18:33:23,505 - __main__ - WARNING - Target validation warning: Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-09 18:33:23,505 - __main__ - WARNING - Target validation warning: Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-09 18:33:23,506 - __main__ - WARNING - Target validation warning: Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-09 18:33:23,506 - __main__ - WARNING - Target validation warning: Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-09 18:33:23,507 - __main__ - WARNING - Target validation warning: Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-09 18:33:23,516 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-09 18:33:23,516 - __main__ - INFO - Saving to database...
+2026-08-09 18:33:23,639 - __main__ - INFO - Performing reconciliation...
+2026-08-09 18:33:23,650 - __main__ - INFO - Saving reconciliation results...
+2026-08-09 18:33:23,693 - __main__ - INFO - JSON report saved to reports/reconciliation_02721983.json
+2026-08-09 18:33:23,694 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-09 18:33:23,696 - __main__ - INFO - Database connection closed
+2026-08-10 10:35:48,557 - __main__ - INFO - Starting reconciliation run
+2026-08-10 10:35:48,558 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-10 10:35:48,558 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-10 10:35:48,723 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-10 10:35:48,724 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-10 10:35:48,724 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-10 10:35:48,729 - __main__ - INFO - Database connection established
+2026-08-10 10:35:48,729 - __main__ - INFO - Loading source data...
+2026-08-10 10:35:48,800 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-10 10:35:48,801 - __main__ - INFO - Loading target data...
+2026-08-10 10:35:48,847 - __main__ - WARNING - Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-10 10:35:48,847 - __main__ - WARNING - Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-10 10:35:48,848 - __main__ - WARNING - Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-10 10:35:48,848 - __main__ - WARNING - Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-10 10:35:48,848 - __main__ - WARNING - Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-10 10:35:48,849 - __main__ - WARNING - Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-10 10:35:48,860 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-10 10:35:48,861 - __main__ - INFO - Saving to database...
+2026-08-10 10:35:48,939 - __main__ - INFO - Performing reconciliation...
+2026-08-10 10:35:48,952 - __main__ - INFO - Saving reconciliation results...
+2026-08-10 10:35:49,001 - __main__ - INFO - JSON report saved to reports\reconciliation_ae34c3c7.json
+2026-08-10 10:35:49,005 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-10 10:35:49,006 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-10 10:35:49,008 - __main__ - INFO - Database connection closed
+2026-08-11 21:53:03,426 - __main__ - INFO - Starting reconciliation run
+2026-08-11 21:53:03,427 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 21:53:03,428 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 21:53:03,523 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 21:53:03,523 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 21:53:03,523 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 21:53:03,534 - __main__ - INFO - Database connection established
+2026-08-11 21:53:03,534 - __main__ - INFO - Loading source data...
+2026-08-11 21:53:03,571 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 21:53:03,571 - __main__ - INFO - Loading target data...
+2026-08-11 21:53:03,587 - __main__ - WARNING - Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-11 21:53:03,587 - __main__ - WARNING - Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-11 21:53:03,587 - __main__ - WARNING - Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-11 21:53:03,587 - __main__ - WARNING - Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-11 21:53:03,588 - __main__ - WARNING - Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-11 21:53:03,588 - __main__ - WARNING - Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-11 21:53:03,592 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-11 21:53:03,592 - __main__ - INFO - Saving to database...
+2026-08-11 21:53:03,660 - __main__ - INFO - Performing reconciliation...
+2026-08-11 21:53:03,666 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 21:53:03,701 - __main__ - INFO - JSON report saved to reports\reconciliation_b9959605.json
+2026-08-11 21:53:03,703 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 21:53:03,703 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 21:53:03,704 - __main__ - INFO - Database connection closed
+2026-08-11 21:58:04,996 - __main__ - INFO - Starting reconciliation run
+2026-08-11 21:58:04,996 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 21:58:04,997 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 21:58:05,051 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 21:58:05,051 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 21:58:05,052 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 21:58:05,053 - __main__ - INFO - Database connection established
+2026-08-11 21:58:05,053 - __main__ - INFO - Loading source data...
+2026-08-11 21:58:05,067 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 21:58:05,067 - __main__ - INFO - Loading target data...
+2026-08-11 21:58:05,075 - __main__ - WARNING - Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-11 21:58:05,075 - __main__ - WARNING - Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-11 21:58:05,075 - __main__ - WARNING - Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-11 21:58:05,075 - __main__ - WARNING - Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-11 21:58:05,076 - __main__ - WARNING - Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-11 21:58:05,076 - __main__ - WARNING - Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-11 21:58:05,078 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-11 21:58:05,078 - __main__ - INFO - Saving to database...
+2026-08-11 21:58:05,108 - __main__ - INFO - Performing reconciliation...
+2026-08-11 21:58:05,115 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 21:58:05,136 - __main__ - INFO - JSON report saved to reports\reconciliation_d7de7242.json
+2026-08-11 21:58:05,136 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 21:58:05,138 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 21:58:05,138 - __main__ - INFO - Database connection closed
+2026-08-11 22:06:01,190 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:06:01,191 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:06:01,191 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:06:01,249 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:06:01,249 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:06:01,249 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:06:01,250 - __main__ - INFO - Database connection established
+2026-08-11 22:06:01,250 - __main__ - INFO - Loading source data...
+2026-08-11 22:06:01,264 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:06:01,264 - __main__ - INFO - Loading target data...
+2026-08-11 22:06:01,280 - __main__ - WARNING - Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-11 22:06:01,281 - __main__ - WARNING - Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-11 22:06:01,281 - __main__ - WARNING - Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-11 22:06:01,281 - __main__ - WARNING - Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-11 22:06:01,281 - __main__ - WARNING - Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-11 22:06:01,281 - __main__ - WARNING - Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-11 22:06:01,284 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-11 22:06:01,284 - __main__ - INFO - Saving to database...
+2026-08-11 22:06:01,327 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:06:01,332 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:06:01,350 - __main__ - INFO - JSON report saved to reports\reconciliation_d01899e8.json
+2026-08-11 22:06:01,352 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:06:01,352 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:06:01,352 - __main__ - INFO - Database connection closed
+2026-08-11 22:16:16,506 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:16:16,506 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:16:16,506 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:16:16,556 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:16:16,557 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:16:16,557 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:16:16,558 - __main__ - INFO - Database connection established
+2026-08-11 22:16:16,558 - __main__ - INFO - Loading source data...
+2026-08-11 22:16:16,570 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:16:16,570 - __main__ - INFO - Loading target data...
+2026-08-11 22:16:16,579 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:16:16,579 - __main__ - INFO - Saving to database...
+2026-08-11 22:16:16,612 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:16:16,615 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:16:16,629 - __main__ - INFO - JSON report saved to reports\reconciliation_faeb6aa9.json
+2026-08-11 22:16:16,630 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:16:16,630 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:16:16,630 - __main__ - INFO - Database connection closed
+2026-08-11 22:17:40,330 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:17:40,330 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:17:40,330 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:17:40,383 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:17:40,383 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:17:40,383 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:17:40,384 - __main__ - INFO - Database connection established
+2026-08-11 22:17:40,384 - __main__ - INFO - Loading source data...
+2026-08-11 22:17:40,398 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:17:40,398 - __main__ - INFO - Loading target data...
+2026-08-11 22:17:40,409 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:17:40,409 - __main__ - INFO - Saving to database...
+2026-08-11 22:17:40,439 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:17:40,442 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:17:40,460 - __main__ - INFO - JSON report saved to reports\reconciliation_9cee3943.json
+2026-08-11 22:17:40,461 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:17:40,461 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:17:40,462 - __main__ - INFO - Database connection closed
+2026-08-11 22:23:12,768 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:23:12,769 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:23:12,769 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:23:12,820 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:23:12,820 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:23:12,820 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:23:12,821 - __main__ - INFO - Database connection established
+2026-08-11 22:23:12,821 - __main__ - INFO - Loading source data...
+2026-08-11 22:23:12,836 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:23:12,836 - __main__ - INFO - Loading target data...
+2026-08-11 22:23:12,844 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:23:12,845 - __main__ - INFO - Saving to database...
+2026-08-11 22:23:12,876 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:23:12,880 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:23:12,944 - __main__ - INFO - JSON report saved to reports\reconciliation_b8603771.json
+2026-08-11 22:23:12,944 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:23:12,944 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:23:12,945 - __main__ - INFO - Database connection closed
+2026-08-11 22:26:32,842 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:26:32,842 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:26:32,844 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:26:32,897 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:26:32,897 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:26:32,897 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:26:32,898 - __main__ - INFO - Database connection established
+2026-08-11 22:26:32,898 - __main__ - INFO - Loading source data...
+2026-08-11 22:26:32,912 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:26:32,912 - __main__ - INFO - Loading target data...
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 2: Duplicate transaction_id 'TXN003'
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 9: Duplicate transaction_id 'TXN010'
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 14: Duplicate transaction_id 'TXN015'
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 22: Duplicate transaction_id 'TXN003'
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 23: Duplicate transaction_id 'TXN010'
+2026-08-11 22:26:32,920 - __main__ - WARNING - Target: Row 24: Duplicate transaction_id 'TXN015'
+2026-08-11 22:26:32,924 - __main__ - INFO - Target: 25 valid records after cleaning
+2026-08-11 22:26:32,924 - __main__ - INFO - Saving to database...
+2026-08-11 22:26:32,952 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:26:32,958 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:26:32,975 - __main__ - INFO - JSON report saved to reports\reconciliation_da69905d.json
+2026-08-11 22:26:32,978 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:26:32,978 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:26:32,979 - __main__ - INFO - Database connection closed
+2026-08-11 22:39:28,612 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:39:28,613 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:39:28,613 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:39:28,664 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:39:28,664 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:39:28,664 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:39:28,665 - __main__ - INFO - Database connection established
+2026-08-11 22:39:28,665 - __main__ - INFO - Loading source data...
+2026-08-11 22:39:28,678 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:39:28,678 - __main__ - INFO - Loading target data...
+2026-08-11 22:39:28,689 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:39:28,689 - __main__ - INFO - Saving to database...
+2026-08-11 22:39:28,718 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:39:28,722 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:39:28,736 - __main__ - INFO - JSON report saved to reports\reconciliation_7055b887.json
+2026-08-11 22:39:28,737 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:39:28,737 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:39:28,738 - __main__ - INFO - Database connection closed
+2026-08-11 22:43:05,791 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:43:05,791 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:43:05,791 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:43:05,840 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:43:05,841 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:43:05,841 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:43:05,841 - __main__ - INFO - Database connection established
+2026-08-11 22:43:05,842 - __main__ - INFO - Loading source data...
+2026-08-11 22:43:05,855 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:43:05,855 - __main__ - INFO - Loading target data...
+2026-08-11 22:43:05,866 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:43:05,867 - __main__ - INFO - Saving to database...
+2026-08-11 22:43:05,900 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:43:05,903 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:43:05,918 - __main__ - INFO - JSON report saved to reports\reconciliation_417a78c3.json
+2026-08-11 22:43:05,919 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:43:05,919 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:43:05,920 - __main__ - INFO - Database connection closed
+2026-08-11 22:43:46,360 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:43:46,361 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:43:46,361 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:43:46,417 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:43:46,418 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:43:46,418 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:43:46,419 - __main__ - INFO - Database connection established
+2026-08-11 22:43:46,419 - __main__ - INFO - Loading source data...
+2026-08-11 22:43:46,432 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:43:46,432 - __main__ - INFO - Loading target data...
+2026-08-11 22:43:46,442 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:43:46,442 - __main__ - INFO - Saving to database...
+2026-08-11 22:43:46,469 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:43:46,474 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:43:46,491 - __main__ - INFO - JSON report saved to reports\reconciliation_7f5ab33f.json
+2026-08-11 22:43:46,494 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:43:46,494 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:43:46,495 - __main__ - INFO - Database connection closed
+2026-08-11 22:44:46,358 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:44:46,358 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:44:46,358 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:44:46,410 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:44:46,411 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:44:46,411 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:44:46,412 - __main__ - INFO - Database connection established
+2026-08-11 22:44:46,412 - __main__ - INFO - Loading source data...
+2026-08-11 22:44:46,426 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:44:46,426 - __main__ - INFO - Loading target data...
+2026-08-11 22:44:46,434 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:44:46,435 - __main__ - INFO - Saving to database...
+2026-08-11 22:44:46,466 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:44:46,469 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:44:46,484 - __main__ - INFO - JSON report saved to reports\reconciliation_26e7f4f9.json
+2026-08-11 22:44:46,485 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:44:46,485 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:44:46,486 - __main__ - INFO - Database connection closed
+2026-08-11 22:49:10,775 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:49:10,775 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:49:10,775 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:49:10,826 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:49:10,826 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:49:10,827 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:49:10,828 - __main__ - INFO - Database connection established
+2026-08-11 22:49:10,828 - __main__ - INFO - Loading source data...
+2026-08-11 22:49:10,841 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:49:10,841 - __main__ - INFO - Loading target data...
+2026-08-11 22:49:10,850 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:49:10,851 - __main__ - INFO - Saving to database...
+2026-08-11 22:49:10,875 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:49:10,879 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:49:10,893 - __main__ - INFO - JSON report saved to reports\reconciliation_7ab88e9e.json
+2026-08-11 22:49:10,894 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:49:10,894 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:49:10,895 - __main__ - INFO - Database connection closed
+2026-08-11 22:51:13,439 - __main__ - INFO - Starting reconciliation run
+2026-08-11 22:51:13,440 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 22:51:13,440 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 22:51:13,491 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 22:51:13,492 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 22:51:13,492 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 22:51:13,493 - __main__ - INFO - Database connection established
+2026-08-11 22:51:13,493 - __main__ - INFO - Loading source data...
+2026-08-11 22:51:13,505 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 22:51:13,506 - __main__ - INFO - Loading target data...
+2026-08-11 22:51:13,516 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 22:51:13,517 - __main__ - INFO - Saving to database...
+2026-08-11 22:51:13,543 - __main__ - INFO - Performing reconciliation...
+2026-08-11 22:51:13,548 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 22:51:13,564 - __main__ - INFO - JSON report saved to reports\reconciliation_50d04503.json
+2026-08-11 22:51:13,565 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 22:51:13,565 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 22:51:13,566 - __main__ - INFO - Database connection closed
+2026-08-11 23:12:59,217 - __main__ - INFO - Starting reconciliation run
+2026-08-11 23:12:59,217 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 23:12:59,217 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 23:12:59,281 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 23:12:59,281 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 23:12:59,281 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 23:12:59,283 - __main__ - INFO - Database connection established
+2026-08-11 23:12:59,283 - __main__ - INFO - Loading source data...
+2026-08-11 23:12:59,297 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 23:12:59,297 - __main__ - INFO - Loading target data...
+2026-08-11 23:12:59,307 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 23:12:59,307 - __main__ - INFO - Saving to database...
+2026-08-11 23:12:59,341 - __main__ - INFO - Performing reconciliation...
+2026-08-11 23:12:59,345 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 23:12:59,360 - __main__ - INFO - JSON report saved to reports\reconciliation_84df29b2.json
+2026-08-11 23:12:59,361 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 23:12:59,362 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 23:12:59,362 - __main__ - INFO - Database connection closed
+2026-08-11 23:13:39,734 - __main__ - INFO - Starting reconciliation run
+2026-08-11 23:13:39,734 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 23:13:39,734 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 23:13:39,788 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 23:13:39,788 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 23:13:39,788 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 23:13:39,789 - __main__ - INFO - Database connection established
+2026-08-11 23:13:39,789 - __main__ - INFO - Loading source data...
+2026-08-11 23:13:39,803 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 23:13:39,803 - __main__ - INFO - Loading target data...
+2026-08-11 23:13:39,812 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 23:13:39,812 - __main__ - INFO - Saving to database...
+2026-08-11 23:13:39,842 - __main__ - INFO - Performing reconciliation...
+2026-08-11 23:13:39,845 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 23:13:39,862 - __main__ - INFO - JSON report saved to reports\reconciliation_336cb929.json
+2026-08-11 23:13:39,863 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 23:13:39,863 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 23:13:39,864 - __main__ - INFO - Database connection closed
+2026-08-11 23:14:59,764 - __main__ - INFO - Starting reconciliation run
+2026-08-11 23:14:59,764 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 23:14:59,764 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 23:14:59,816 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 23:14:59,816 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 23:14:59,816 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 23:14:59,818 - __main__ - INFO - Database connection established
+2026-08-11 23:14:59,818 - __main__ - INFO - Loading source data...
+2026-08-11 23:14:59,832 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 23:14:59,832 - __main__ - INFO - Loading target data...
+2026-08-11 23:14:59,842 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 23:14:59,842 - __main__ - INFO - Saving to database...
+2026-08-11 23:14:59,870 - __main__ - INFO - Performing reconciliation...
+2026-08-11 23:14:59,874 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 23:14:59,893 - __main__ - INFO - JSON report saved to reports\reconciliation_f74af2ef.json
+2026-08-11 23:14:59,894 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 23:14:59,894 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 23:14:59,896 - __main__ - INFO - Database connection closed
+2026-08-11 23:21:01,706 - __main__ - INFO - Starting reconciliation run
+2026-08-11 23:21:01,707 - __main__ - INFO - Source: data/source_transactions.csv
+2026-08-11 23:21:01,707 - __main__ - INFO - Target: data/target_transactions.csv
+2026-08-11 23:21:01,760 - mysql.connector - INFO - package: mysql.connector.plugins
+2026-08-11 23:21:01,760 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2026-08-11 23:21:01,760 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-08-11 23:21:01,761 - __main__ - INFO - Database connection established
+2026-08-11 23:21:01,761 - __main__ - INFO - Loading source data...
+2026-08-11 23:21:01,775 - __main__ - INFO - Source: 20 valid records after cleaning
+2026-08-11 23:21:01,775 - __main__ - INFO - Loading target data...
+2026-08-11 23:21:01,784 - __main__ - INFO - Target: 20 valid records after cleaning
+2026-08-11 23:21:01,784 - __main__ - INFO - Saving to database...
+2026-08-11 23:21:01,816 - __main__ - INFO - Performing reconciliation...
+2026-08-11 23:21:01,820 - __main__ - INFO - Saving reconciliation results...
+2026-08-11 23:21:01,834 - __main__ - INFO - JSON report saved to reports\reconciliation_3aaa0e81.json
+2026-08-11 23:21:01,835 - __main__ - INFO - Latest JSON report saved to reports\latest_reconciliation.json
+2026-08-11 23:21:01,835 - __main__ - INFO - Reconciliation completed successfully!
+2026-08-11 23:21:01,836 - __main__ - INFO - Database connection closed

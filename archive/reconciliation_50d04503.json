@@ -1,0 +1,360 @@
+{
+  "run_id": "50d04503",
+  "timestamp": "2026-08-11T22:51:13.563400",
+  "summary": {
+    "run_id": "50d04503",
+    "total_source_records": 20,
+    "total_target_records": 20,
+    "matched_count": 20,
+    "duplicate_source_count": 0,
+    "duplicate_target_count": 0,
+    "missing_in_target_count": 0,
+    "missing_in_source_count": 0,
+    "amount_mismatch_count": 0,
+    "date_mismatch_count": 0,
+    "description_mismatch_count": 0,
+    "total_discrepancies": 0
+  },
+  "matches": [
+    {
+      "source_id": 17,
+      "target_id": 14,
+      "match_type": "matched",
+      "source_amount": 199.99,
+      "target_amount": 199.99,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN018",
+        "source_date": "2024-02-01",
+        "target_date": "2024-02-01",
+        "source_description": "Cloud Hosting",
+        "target_description": "Cloud Hosting",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 5,
+      "target_id": 4,
+      "match_type": "matched",
+      "source_amount": 2500.0,
+      "target_amount": 2500.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN006",
+        "source_date": "2024-01-20",
+        "target_date": "2024-01-20",
+        "source_description": "Freelance Income",
+        "target_description": "Freelance Income",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 11,
+      "target_id": 9,
+      "match_type": "matched",
+      "source_amount": 500.0,
+      "target_amount": 500.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN012",
+        "source_date": "2024-01-26",
+        "target_date": "2024-01-26",
+        "source_description": "Equipment Purchase",
+        "target_description": "Equipment Purchase",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 13,
+      "target_id": 11,
+      "match_type": "matched",
+      "source_amount": 2200.0,
+      "target_amount": 2200.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN014",
+        "source_date": "2024-01-28",
+        "target_date": "2024-01-28",
+        "source_description": "Project Milestone",
+        "target_description": "Project Milestone",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 14,
+      "target_id": 19,
+      "match_type": "matched",
+      "source_amount": 120.0,
+      "target_amount": 120.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN015",
+        "source_date": "2024-01-29",
+        "target_date": "2024-01-29",
+        "source_description": "Insurance Premium",
+        "target_description": "Insurance Premium",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 16,
+      "target_id": 13,
+      "match_type": "matched",
+      "source_amount": 450.0,
+      "target_amount": 450.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN017",
+        "source_date": "2024-01-31",
+        "target_date": "2024-01-31",
+        "source_description": "Design Services",
+        "target_description": "Design Services",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 8,
+      "target_id": 7,
+      "match_type": "matched",
+      "source_amount": 35.25,
+      "target_amount": 35.25,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN009",
+        "source_date": "2024-01-23",
+        "target_date": "2024-01-23",
+        "source_description": "Coffee Meeting",
+        "target_description": "Coffee Meeting",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 19,
+      "target_id": 16,
+      "match_type": "matched",
+      "source_amount": 55.75,
+      "target_amount": 55.75,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN020",
+        "source_date": "2024-02-03",
+        "target_date": "2024-02-03",
+        "source_description": "Team Lunch",
+        "target_description": "Team Lunch",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 7,
+      "target_id": 6,
+      "match_type": "matched",
+      "source_amount": 1200.0,
+      "target_amount": 1200.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN008",
+        "source_date": "2024-01-22",
+        "target_date": "2024-01-22",
+        "source_description": "Marketing Campaign",
+        "target_description": "Marketing Campaign",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 3,
+      "target_id": 2,
+      "match_type": "matched",
+      "source_amount": 150.0,
+      "target_amount": 150.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN004",
+        "source_date": "2024-01-18",
+        "target_date": "2024-01-18",
+        "source_description": "Internet Bill",
+        "target_description": "Internet Bill",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 0,
+      "target_id": 0,
+      "match_type": "matched",
+      "source_amount": 1250.0,
+      "target_amount": 1250.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN001",
+        "source_date": "2024-01-15",
+        "target_date": "2024-01-15",
+        "source_description": "Office Rent Payment",
+        "target_description": "Office Rent Payment",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 15,
+      "target_id": 12,
+      "match_type": "matched",
+      "source_amount": 65.0,
+      "target_amount": 65.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN016",
+        "source_date": "2024-01-30",
+        "target_date": "2024-01-30",
+        "source_description": "Parking Fee",
+        "target_description": "Parking Fee",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 12,
+      "target_id": 10,
+      "match_type": "matched",
+      "source_amount": 85.5,
+      "target_amount": 85.5,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN013",
+        "source_date": "2024-01-27",
+        "target_date": "2024-01-27",
+        "source_description": "Gas Expense",
+        "target_description": "Gas Expense",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 18,
+      "target_id": 15,
+      "match_type": "matched",
+      "source_amount": 300.0,
+      "target_amount": 300.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN019",
+        "source_date": "2024-02-02",
+        "target_date": "2024-02-02",
+        "source_description": "Legal Consultation",
+        "target_description": "Legal Consultation",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 6,
+      "target_id": 5,
+      "match_type": "matched",
+      "source_amount": 75.0,
+      "target_amount": 75.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN007",
+        "source_date": "2024-01-21",
+        "target_date": "2024-01-21",
+        "source_description": "Phone Bill",
+        "target_description": "Phone Bill",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 2,
+      "target_id": 17,
+      "match_type": "matched",
+      "source_amount": 3200.5,
+      "target_amount": 3200.5,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN003",
+        "source_date": "2024-01-17",
+        "target_date": "2024-01-17",
+        "source_description": "Client Project Payment",
+        "target_description": "Client Project Payment",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 4,
+      "target_id": 3,
+      "match_type": "matched",
+      "source_amount": 45.67,
+      "target_amount": 45.67,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN005",
+        "source_date": "2024-01-19",
+        "target_date": "2024-01-19",
+        "source_description": "Office Supplies",
+        "target_description": "Office Supplies",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 9,
+      "target_id": 18,
+      "match_type": "matched",
+      "source_amount": 1800.0,
+      "target_amount": 1800.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN010",
+        "source_date": "2024-01-24",
+        "target_date": "2024-01-24",
+        "source_description": "Consulting Fee",
+        "target_description": "Consulting Fee",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 10,
+      "target_id": 8,
+      "match_type": "matched",
+      "source_amount": 299.0,
+      "target_amount": 299.0,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN011",
+        "source_date": "2024-01-25",
+        "target_date": "2024-01-25",
+        "source_description": "Annual Subscription",
+        "target_description": "Annual Subscription",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    {
+      "source_id": 1,
+      "target_id": 1,
+      "match_type": "matched",
+      "source_amount": 89.99,
+      "target_amount": 89.99,
+      "difference": null,
+      "details": {
+        "transaction_id": "TXN002",
+        "source_date": "2024-01-16",
+        "target_date": "2024-01-16",
+        "source_description": "Software Subscription",
+        "target_description": "Software Subscription",
+        "amount_diff": 0.0,
+        "date_diff_days": 0
+      }
+    }
+  ]
+}

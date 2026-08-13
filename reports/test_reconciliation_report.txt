@@ -1,0 +1,59 @@
+================================================================================
+FINANCE RECONCILIATION REPORT
+================================================================================
+Run ID: e86d5904
+Date: 2026-08-08 22:27:31
+Source File: data/source_transactions.csv
+Target File: data/target_transactions.csv
+
+SUMMARY
+----------------------------------------
+Total Source Records:         20
+Total Target Records:         25
+Matched:                      17
+Duplicate in Source:           0
+Duplicate in Target:           6
+Missing in Target:             0
+Missing in Source:             2
+Amount Mismatch:               1
+Date Mismatch:                 1
+Description Mismatch:          1
+Total Discrepancies:          11
+
+DETAILED DISCREPANCIES
+----------------------------------------
+
+DUPLICATE TARGET (6):
+  TXN: TXN003
+    Amount: $3,200.50 | Date: None
+  TXN: TXN010
+    Amount: $1,800.00 | Date: None
+  TXN: TXN015
+    Amount: $120.00 | Date: None
+  TXN: TXN003
+    Amount: $3,200.50 | Date: None
+  TXN: TXN010
+    Amount: $1,850.00 | Date: None
+  TXN: TXN015
+    Amount: $120.00 | Date: None
+
+MISSING IN SOURCE (2):
+  TXN: TXN022
+    Amount: $500.00 | Date: 2024-02-05
+  TXN: TXN021
+    Amount: $1,250.00 | Date: 2024-02-04
+
+AMOUNT MISMATCH (1):
+  TXN: TXN010
+    Source: $1,800.00 | Target: $1,850.00 | Diff: $-50.00
+
+DATE MISMATCH (1):
+  TXN: TXN015
+    Source Date: 2024-01-29 | Target Date: 2024-01-30 | Diff: 1 days
+
+DESCRIPTION MISMATCH (1):
+  TXN: TXN003
+    Source: Client Project Payment
+    Target: Client Project Payment Duplicate
+
+================================================================================
